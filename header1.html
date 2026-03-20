@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header1.css">
+</head>
+<body>
+    <header>
+        <div class="headercontainer ">
+            
+              
+                <div class="headerview">
+                    <div class="headerleftpart">
+                       
+                            <img src="images/letthemshine.png" alt="logo" >
+                     
+                        
+                        
+                    </div>
+                    <div class="closebar">
+                        <img onclick="hideSidebar()" src="images/close.png" alt="close">
+
+                    </div>
+                   
+                </div>
+                <nav class="navitem">
+                    <ul class="menu">
+                        <li class="menu-item1">HOME</li>
+                        <li class="menu-item2">ABOUT LTS</li>
+                        <li class="menu-item3">community partners<img onclick="showDropdown1()" class="down-arrow1" src="images/down-arrow-icon.png" alt="down-arrow">
+                            <div class="dropdown1">
+                                <ul>
+                                    <li>Community partners</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item4">patient stories <img onclick="showDropdown2()" class="down-arrow1" src="images/down-arrow-icon.png" alt="down-arrow">
+                            <div class="dropdown2">
+                             <ul>
+                                <li>Patient Stories</li>
+                                <li>Nominate a Patient</li>
+                             </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item5">HOW YOU CAN HELP <img onclick="showDropdown3()" class="down-arrow1" src="images/down-arrow-icon.png" alt="down-arrow" >
+                            <div class="dropdown3">
+                                <ul>
+                                    <li>Donate</li>
+                                    <li>Clinicians - Nominate a Patient</li>
+                                    <li>Amazon Smile</li>
+                                    <li>Become a Partner</li>
+                                </ul>
+
+                            </div>
+                        </li>
+                    </ul>
+                        
+                    
+                </nav>
+            
+                
+          <div class="navigation-menu">
+            <img class="menubar" onclick="showSidebar()" src="images/menu.png" alt="menu">
+            <h2>MENU</h2>
+          </div>
+    </div>
+                
+
+                
+            
+                
+                
+            
+            
+
+    </header>
+        
+        <script>
+        
+       function showSidebar(){
+               const container = document.querySelector(".headercontainer");
+              const nav = document.querySelector(".navitem");
+              const menuBtn = document.querySelector(".navigation-menu");
+
+               container.classList.add("sidebar");
+               nav.classList.add("mobilenav");
+
+               menuBtn.style.display = "none";
+          }
+         function hideSidebar(){
+          const container = document.querySelector(".headercontainer");
+          const nav = document.querySelector(".navitem");
+          const menuBtn = document.querySelector(".navigation-menu");
+
+          container.classList.remove("sidebar");
+          nav.classList.remove("mobilenav");
+
+          menuBtn.style.display = "block";
+       }
+
+        
+        function showDropdown1(){
+        const dropdown1=document.querySelector(".dropdown1");
+        if(dropdown1.style.display=="none"){
+            dropdown1.style.display="block";
+        }
+        else{
+            dropdown1.style.display="none";
+
+        }
+        
+    }
+    
+    function showDropdown2(){
+        const dropdown2=document.querySelector(".dropdown2");
+        if(dropdown2.style.display=="none"){
+            dropdown2.style.display="block";
+        }
+        else{
+            dropdown2.style.display="none";
+
+        }
+        
+    }
+    function showDropdown3(){
+        const dropdown3=document.querySelector(".dropdown3");
+         if(dropdown3.style.display=="none"){
+            dropdown3.style.display="block";
+        }
+        else{
+            dropdown3.style.display="none";
+
+        }
+        
+    }
+    </script>
+    
+        
+    
+</body>
+</html>
