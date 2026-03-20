@@ -1,0 +1,194 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.footercontainer{
+    /*height: 348px;*/
+    background-color: #222425;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:54px 79.57px 54px 80px;
+    
+    
+}
+.footercontainer .footercontainer__leftpart{
+    display: flex;
+    flex-direction: column;
+    
+} 
+.footercontainer .footercontainer__leftpart .footer__address{
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.footercontainer .footercontainer__leftpart .footer__address span{
+    margin-right: 20px;
+}
+.footercontainer .footercontainer__leftpart .footer__socialmediaicons{
+    margin-bottom: 8px;
+
+}
+.footercontainer .footercontainer__leftpart .footer__copyright{
+    font-weight: 400;
+    font-size: 14px;
+}
+.footercontainer .footercontainer__leftpart .footercontainer__button{
+    height: 60px;
+    width:189px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    background-color: #222425;
+    color: #FFFFFF;
+    border:1px solid #F7D500;
+    padding:18px 28px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size:18px ;
+}
+.footercontainer .footercontainer__leftpart .footercontainer__button img{
+    margin-left: 14.28px;
+}
+.footercontainer .footercontainer__leftpart .footer__mediaicons{
+    display:flex;
+    gap:18px;
+    list-style: none;
+}
+.footercontainer .footercontainer__leftpart .footer__mediaicons .footer__mediaiconitems{
+    background-color: #FFFFFF;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:36px;
+    width:36px;
+    border-radius: 50%;
+}
+.footercontainer .footercontainer__rightpart img{
+    width: 261.43px;
+    height:240px;
+
+}
+@media(max-width:1024px){
+    .footercontainer{
+        padding: 54px 83.57px 54px 80px;
+
+    }
+    .footercontainer .footercontainer__leftpart .footer__address{
+        width: 422px;
+        margin-bottom: 13px;
+        line-height: 32px;
+    }
+    .footercontainer .footercontainer__leftpart .footer__socialmediaicons{
+        margin-bottom: 8px;
+    }
+    .footercontainer .footercontainer__rightpart img{
+    width: 261.43px;
+    height:240px;
+
+}
+
+
+}
+@media(max-width:768px){
+    .footercontainer{
+    width:100%;
+    height:348px;
+    background-color: #222425;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 54px 40px 54px 40px;
+    /*padding:50px 0px 0px 0px;*/
+    }
+    .footercontainer .footercontainer__leftpart .footer__address{
+        width:350px;
+        margin-bottom: 13px;
+        line-height: 32px;
+    }
+    .footercontainer .footercontainer__rightpart img{
+    width:100%;
+    max-width: 261.43px;
+    max-height:240px;
+
+}
+}
+@media(max-width:600px){
+    .footercontainer{
+        padding: 0px 30px 0px 20px;
+
+    }
+    .footercontainer .footercontainer__leftpart .footer__address{
+        width:250px;
+        font-size: 15px;
+        margin-bottom: 13px;
+        font-weight: 500;
+        line-height: 15px;
+    }
+    .footercontainer .footercontainer__rightpart  img{
+        width:200px;
+        height:auto;
+        
+    }
+
+}
+@media(max-width:500px){
+    .footercontainer{
+        padding: 0px 40.46px 0px 20px;
+
+    }
+    .footercontainer .footercontainer__leftpart .footer__address{
+        width:250px;
+        font-size: 15px;
+        margin-bottom: 13px;
+        font-weight: 500;
+        line-height: 15px;
+    }
+    .footercontainer .footercontainer__rightpart  img{
+        width:150px;
+        height:auto;
+        
+    }
+
+}
+@media(max-width:430px){
+    .footercontainer{
+    
+    height: auto;
+    background-color: #222425;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 40px 0px 0px;
+    
+}
+.footercontainer .footercontainer__leftpart{
+    padding-left: 51px;
+}
+.footercontainer .footercontainer__leftpart .footer__address{
+        width: 339px;
+        margin-bottom: 24px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 32px;
+    }
+.footercontainer .footercontainer__leftpart .footer__copyright{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom:56.88px ;
+}
+.footercontainer .footercontainer__rightpart  img{
+        width:295.4px;
+        height:284.32px;
+        
+        
+    }
+
+}
